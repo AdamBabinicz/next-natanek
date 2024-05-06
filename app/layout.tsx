@@ -49,8 +49,19 @@ export const metadata: Metadata = {
     template: "%s - Strona o Natanielku",
   },
   description:
-    "Dzieci są nadzieją, która rozkwita wciąż na nowo, projektem, który nieustannie się urzeczywistnia, przyszłością, która pozostaje zawsze otwarta. (Jan Paweł II)",
-  keywords: ["Natan", "Nat", "Natanek"],
+    "Dzieci są obrazem niewinności, radości i nieograniczonego potencjału, który ożywia nasze życie i kształtuje naszą przyszłość.",
+  keywords: [
+    "Natan",
+    "Nat",
+    "Natanek",
+    "Natanielcio",
+    "Natanieluś",
+    "Nati",
+    "Natek",
+    "Natko",
+    "Nateczek",
+    "Natkuś",
+  ],
   icons: {
     icon: ["/7.png?v=4"],
     apple: ["/favicon.png?v=4"],
@@ -58,14 +69,15 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     description:
-      "Istnieją dwa rodzaje dotyku, które pamięta się przez całe życie: pierwszy raz, kiedy ukochana osoba muśnie twoją dłoń, i ten, kiedy twoje nowo narodzone dziecko chwyci cię za palec. W obu przypadkach jesteście ze sobą związani już na wieczność",
+      "Nic nie jest bardziej poruszającego niż chwila, gdy spojrzysz w oczy swojego nowo narodzonego dziecka i poczujesz, że jesteś już kochany bezgranicznie i na zawsze.",
     siteId: "",
     images: ["/assets/1.jpg"],
   },
   openGraph: {
-    title: "Dziecko to nie zbiór komórek – to zbiór naszych uczuć",
+    title:
+      "Dziecko to nie tylko istota biologiczna, to również zbiór naszych marzeń, nadziei i miłości, które dają mu prawdziwą wartość i znaczenie.",
     description:
-      "Człowieka, który patrzy w oczy dziecka, uderza przede wszystkim ich niewinność: owa przejmująca niezdolność do kłamstwa, do zakładania maski, czy chęci bycia kimś innym, niż jest. (Anthony de Mello)",
+      "Kiedy spojrzymy w oczy dziecka, widzimy w nich nie tylko niewinność, ale także autentyczność i czystość serca, która jest dla nas inspiracją i wzruszającym przypomnieniem o prostocie życia.",
     images: [
       {
         url: "/assets/4.webp",
