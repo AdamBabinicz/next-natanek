@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import StarsCanvas from "@/components/main/StarBackground";
+import GoogleAnalytics from "../GoogleAnalitics";
 import Footer from "@/components/main/Footer";
 import Navbar from "@/components/main/Navbar";
 
@@ -113,18 +113,6 @@ export default function RootLayout({
   return (
     <>
       <html lang="pl">
-        <head>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-STN2FB1TNF"
-          ></script>
-          <script>
-            (window as any).dataLayer = (window as any).dataLayer || [];
-            function gtag(){(window as any).dataLayer.push(arguments)}
-            gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;,
-            &#39;G-STN2FB1TNF&#39;);
-          </script>
-        </head>
         <body
           className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
         >
@@ -132,6 +120,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <GoogleAnalytics measurementId="G-STN2FB1TNF" />;
         </body>
       </html>
     </>
