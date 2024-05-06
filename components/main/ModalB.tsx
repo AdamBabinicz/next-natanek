@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface ModalBProps {
   closeModal: () => void;
@@ -54,10 +55,12 @@ const ModalB: React.FC<ModalBProps> = ({ closeModal }) => {
             <strong>Codzienność Natanka"</strong>
           </h2>
           <div className="mb-4">
-            <img
+            <Image
               src="/assets/3.webp"
               alt="Image"
               className="max-h-[300px] rounded-lg object-cover w-full"
+              width={500}
+              height={300}
             />
           </div>
           <p className="text-gray-700 text-left">

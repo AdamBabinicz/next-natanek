@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface AboutModalProps {
   closeModal: () => void;
@@ -50,10 +51,12 @@ const AboutModal: React.FC<AboutModalProps> = ({ closeModal }) => {
             <strong>Nataniel znaczy "podarowany przez Boga"</strong>
           </h2>
           <div className="mb-4">
-            <img
+            <Image
               src="/assets/14.jpg"
               alt="Image"
               className="max-h-[300px] rounded-lg object-cover w-full"
+              width={500}
+              height={300}
             />
           </div>
           <p className="text-gray-700 text-left">

@@ -142,10 +142,12 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-          <img
+          <Image
             src="/assets/6.webp"
             alt="..."
             className="flex justify-center mt-20 object-cover"
+            width={400}
+            height={300}
           />
         </div>
       )}
