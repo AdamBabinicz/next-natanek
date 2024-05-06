@@ -20,7 +20,7 @@ const Projects = () => {
         />
         <ProjectCard
           src="/assets/4.jpg"
-          title="Natanek przyrządza potrawy"
+          title="Natanek gotuje obiadek"
           description="16.03.2024'."
         />
         <ProjectCard

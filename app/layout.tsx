@@ -1,7 +1,6 @@
-import type { Metadata as MetadataType } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import StarsCanvas from "@/components/main/StarBackground";
+// import StarsCanvas from "@/components/main/StarBackground";
 import Footer from "@/components/main/Footer";
 import Navbar from "@/components/main/Navbar";
 
@@ -37,6 +36,11 @@ interface Metadata {
     property: string;
     content: string;
   }[];
+  metadataBase?: string;
+  icons: {
+    icon: string[];
+    apple: string[];
+  };
 }
 
 export const metadata: Metadata = {
@@ -47,6 +51,10 @@ export const metadata: Metadata = {
   description:
     "Dzieci są nadzieją, która rozkwita wciąż na nowo, projektem, który nieustannie się urzeczywistnia, przyszłością, która pozostaje zawsze otwarta. (Jan Paweł II)",
   keywords: ["Natan", "Nat", "Natanek"],
+  icons: {
+    icon: ["/7.png?v=4"],
+    apple: ["/favicon.png?v=4"],
+  },
   twitter: {
     card: "summary_large_image",
     description:
@@ -82,6 +90,7 @@ export const metadata: Metadata = {
       content: "Poland",
     },
   ],
+  metadataBase: "https://your-production-url.com",
 };
 
 export default function RootLayout({
@@ -95,7 +104,7 @@ export default function RootLayout({
         <body
           className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
         >
-          <StarsCanvas />
+          {/* <StarsCanvas /> */}
           <Navbar />
           {children}
           <Footer />

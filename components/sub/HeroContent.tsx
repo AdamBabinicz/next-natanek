@@ -72,6 +72,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
           alt="work icons"
           height={650}
           width={650}
+          priority
           className="object-cover hidden sm:block"
         />
       </motion.div>

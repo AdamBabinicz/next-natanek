@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import About from "@/components/main/About";
-import Encryption from "@/components/main/Encryption";
+// import Encryption from "@/components/main/Encryption";
 import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
-import Skills from "@/components/main/Skills";
+// import Skills from "@/components/main/Skills";
 import ModalContainer from "@/components/main/ModalContainer";
+import Film from "@/components/main/Film";
 
 export default function Home() {
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
@@ -33,13 +34,12 @@ export default function Home() {
       <div className="flex flex-col gap-20">
         <Hero />
         <About openModalB={openModalB} />
-        <Skills />
-        <Encryption />
+        <Film />
+        {/* <Skills /> */}
+        {/* <Encryption /> */}
         <Projects />
       </div>
       {/* Modale */}
-      {/* {isModalBOpen && <ModalB closeModal={closeModalB} />}
-      {isAboutModalOpen && <AboutModal closeModal={closeAboutModal} />} */}
       <ModalContainer
         isModalBOpen={isModalBOpen}
         isAboutModalOpen={isAboutModalOpen}

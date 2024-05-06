@@ -1,8 +1,10 @@
 "use client";
 
 import React from "react";
-import { Socials } from "@/constants";
-import Image from "next/image";
+import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
+// import { Socials } from "@/constants";
+// import { FaYoutube } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 
 const Footer = () => {
   return (
@@ -10,51 +12,85 @@ const Footer = () => {
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">Community</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Youtube</span>
+            <div className="font-bold text-[16px]">Projekty</div>
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <CgWebsite />
+              <a
+                href="https://nataniel.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-[15px] ml-[6px]">Blog o Natanielku</span>
+              </a>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Github</span>
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <CgWebsite />
+              <a
+                href="https://habitat-nat.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-[15px] ml-[6px]">Habitat Nataniela</span>
+              </a>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Discord</span>
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <CgWebsite />
+              <a
+                href="https://nataniel.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-[15px] ml-[6px]">Nataniel</span>
+              </a>
             </p>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Media</div>
-            <p className="flex flex-row items-center my-[15px]">
-              {Socials.map((social) => (
-                <a
-                  href={social.link}
-                  key={social.name}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src={social.src}
-                    alt={social.name}
-                    key={social.name}
-                    width={24}
-                    height={24}
-                  />
-                </a>
-              ))}
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <RxInstagramLogo />
+              <a
+                href="https://www.instagram.com/ewa1989"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-[15px] ml-[6px]">Instagram</span>
+              </a>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Twitter</span>
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <RxTwitterLogo />
+              <a
+                href="https://twitter.com/i/flow/login?redirect_after_login=%2FEwa24286694"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-[15px] ml-[6px]">Twitter</span>
+              </a>
             </p>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">About</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Become Sponsor</span>
+            <div className="font-bold text-[16px]">Linki</div>
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <a href="#o-natanku">
+                <span className="text-[15px] ml-[6px]">O Natanku</span>
+              </a>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Learning about me</span>
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <a href="#filmy">
+                <span className="text-[15px] ml-[6px]">Filmy</span>
+              </a>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">puaro@vp.pl</span>
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <a href="#fototeka">
+                <span className="text-[15px] ml-[6px]">Fototeka</span>
+              </a>
+            </p>
+            <p className="flex flex-row items-center my-[10px] cursor-pointer">
+              <a
+                href="mailto:puaro@vp.pl"
+                className="text-[15px] ml-[6px] text-blue-500 hover:underline cursor-pointer"
+              >
+                puaro@vp.pl
+              </a>
             </p>
           </div>
         </div>
