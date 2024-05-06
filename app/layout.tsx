@@ -102,7 +102,7 @@ export const metadata: Metadata = {
       content: "Poland",
     },
   ],
-  metadataBase: "https://your-production-url.com",
+  metadataBase: "https://natek.netlify.app",
 };
 
 export default function RootLayout({
