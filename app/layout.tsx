@@ -121,7 +121,8 @@ export default function RootLayout({
           <script>
             (window as any).dataLayer = (window as any).dataLayer || [];
             function gtag(){(window as any).dataLayer.push(arguments)}
-            gtag('js', new Date()); gtag('config', 'G-STN2FB1TNF');
+            gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;,
+            &#39;G-STN2FB1TNF&#39;);
           </script>
         </head>
         <body
