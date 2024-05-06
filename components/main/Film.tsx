@@ -40,7 +40,7 @@ const Film: React.FC = () => {
           >
             Twoja przeglądarka nie obsługuje tagu video.
           </video>
-          <h2 className="text-lg font-semibold mt-2">Na majówce - 2023'</h2>
+          <h2 className="text-lg font-semibold mt-2">Na majówce - 2023</h2>
           <p className="text-sm">Natanielek ma świetne wyczucie rytmu.</p>
         </div>
         <div className="flex flex-col items-center">
