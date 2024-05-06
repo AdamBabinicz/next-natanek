@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     description:
       "Nic nie jest bardziej poruszającego niż chwila, gdy spojrzysz w oczy swojego nowo narodzonego dziecka i poczujesz, że jesteś już kochany bezgranicznie i na zawsze.",
     siteId: "",
-    images: ["/assets/1.jpg"],
+    images: ["https://natek.netlify.app/assets/1.jpg"],
   },
   openGraph: {
     title:
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
       "Kiedy spojrzymy w oczy dziecka, widzimy w nich nie tylko niewinność, ale także autentyczność i czystość serca, która jest dla nas inspiracją i wzruszającym przypomnieniem o prostocie życia.",
     images: [
       {
-        url: "/assets/4.webp",
+        url: "https://natek.netlify.app/assets/4.webp",
         width: 800,
         height: 600,
         alt: "...",
