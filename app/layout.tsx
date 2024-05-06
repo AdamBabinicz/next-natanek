@@ -113,6 +113,17 @@ export default function RootLayout({
   return (
     <>
       <html lang="pl">
+        <head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-STN2FB1TNF"
+          ></script>
+          <script>
+            (window as any).dataLayer = (window as any).dataLayer || [];
+            function gtag(){(window as any).dataLayer.push(arguments)}
+            gtag('js', new Date()); gtag('config', 'G-STN2FB1TNF');
+          </script>
+        </head>
         <body
           className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
         >
