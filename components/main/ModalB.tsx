@@ -7,10 +7,6 @@ interface ModalBProps {
 }
 
 const ModalB: React.FC<ModalBProps> = ({ closeModal }) => {
-  //   useEffect(() => {
-  //     console.log("ModalB renderowany");
-  //   }, []);
-
   const handleCloseModal = () => {
     closeModal();
   };
@@ -52,7 +48,7 @@ const ModalB: React.FC<ModalBProps> = ({ closeModal }) => {
             </button>
           </div>
           <h2 className="text-xl font-semibold mb-10 text-center">
-            <strong>Codzienność Natanka"</strong>
+            <strong>Codzienność Natanka</strong>
           </h2>
           <div className="mb-4">
             <Image

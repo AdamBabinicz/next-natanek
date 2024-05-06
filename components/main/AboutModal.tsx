@@ -48,7 +48,7 @@ const AboutModal: React.FC<AboutModalProps> = ({ closeModal }) => {
             </button>
           </div>
           <h2 className="text-xl font-semibold mb-10 text-center">
-            <strong>Nataniel znaczy "podarowany przez Boga"</strong>
+            <strong>Nataniel znaczy 'podarowany przez Boga'</strong>
           </h2>
           <div className="mb-4">
             <Image
