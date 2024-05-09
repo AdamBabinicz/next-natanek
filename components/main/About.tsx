@@ -39,7 +39,7 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
           </h2>
           <p className="text-lg mb-4 text-white">
             Natanielek przejawia zainteresowanie motoryzacją i to zarówno
-            jednośladową, trójśladową i czterośladową. Nie omieszka skorzystać z
+            jednośladową, dwuśladową i trójśladową. Nie omieszka skorzystać z
             okazji, aby nie zasiąść za kierownicą auta, gdy tata mu na to
             pozwala. Potrafi nawet użyć klaksonu, chociaż nie ma na tyle siły,
             aby go uruchomić. Radzi sobie w ten sposób, że trzymając oburącz
