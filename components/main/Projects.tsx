@@ -20,12 +20,12 @@ const Projects = () => {
         />
         <ProjectCard
           src="/assets/6.jpg"
-          title="Na siłce w pokoju dla dzieci"
+          title="Na siłce w&nbsp;pokoju dla dzieci"
           description="05.04.2024'."
         />
         <ProjectCard
           src="/assets/5.jpg"
-          title="Natanek lubi kabanoski i pomidorki"
+          title="Natanek lubi kabanoski i&nbsp;pomidorki"
           description="21.03.2024'."
         />
         <ProjectCard

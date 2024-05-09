@@ -48,10 +48,10 @@ const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
             variants={slideInFromLeft(0.8)}
             className="text-lg text-white my-5 max-w-[600px]"
           >
-            Natanek jest bardzo żywiołowym i pogodnym dzieckiem. Interesuje się
-            szczególnie sprzętem gospodarstwa domowego. Zna niektóre odgłosy
-            natury, rozpoznaje i naśladuje zwierzątka. Reaguje na poruszające
-            się samoloty i samochody.
+            Natanek jest bardzo żywiołowym i&nbsp;pogodnym dzieckiem. Interesuje
+            się szczególnie sprzętem gospodarstwa domowego. Zna niektóre odgłosy
+            natury, rozpoznaje i&nbsp;naśladuje zwierzątka. Reaguje na
+            poruszające się samoloty i&nbsp;samochody.
           </motion.p>
           {/* Renderujemy przycisk "Otwórz modal" */}
           <motion.a
