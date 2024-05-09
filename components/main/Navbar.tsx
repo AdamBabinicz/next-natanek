@@ -146,8 +146,8 @@ const Navbar = () => {
             src="/assets/6.webp"
             alt="..."
             className="flex justify-center mt-20 object-cover"
-            width={400}
-            height={300}
+            width={350}
+            height={250}
           />
         </div>
       )}

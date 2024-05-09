@@ -9,24 +9,14 @@ const Projects = () => {
       </h2>
       <div className="h-full w-full grid grid-cols-1 md:grid-cols-3 gap-10 px-10">
         <ProjectCard
-          src="/assets/2.jpg"
-          title="W domu"
-          description="22.11.2023'."
+          src="/assets/8.webp"
+          title="Przed domem"
+          description="05.05.2024'."
         />
         <ProjectCard
-          src="/assets/3.jpg"
-          title="Pełne oprzyrządowanie do kąpieli"
-          description="05.02.2024'."
-        />
-        <ProjectCard
-          src="/assets/4.jpg"
-          title="Natanek gotuje obiadek"
-          description="16.03.2024'."
-        />
-        <ProjectCard
-          src="/assets/5.jpg"
-          title="Natanek lubi kabanoski i pomidorki"
-          description="21.03.2024'."
+          src="/assets/7.jpg"
+          title="Chwila zadumy"
+          description="09.04.2024'."
         />
         <ProjectCard
           src="/assets/6.jpg"
@@ -34,9 +24,19 @@ const Projects = () => {
           description="05.04.2024'."
         />
         <ProjectCard
-          src="/assets/7.jpg"
-          title="Chwila zadumy"
-          description="09.04.2024'."
+          src="/assets/5.jpg"
+          title="Natanek lubi kabanoski i pomidorki"
+          description="21.03.2024'."
+        />
+        <ProjectCard
+          src="/assets/4.jpg"
+          title="Natanek gotuje obiadek"
+          description="16.03.2024'."
+        />
+        <ProjectCard
+          src="/assets/3.jpg"
+          title="Pełne oprzyrządowanie do kąpieli"
+          description="05.02.2024'."
         />
       </div>
     </div>
