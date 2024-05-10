@@ -61,9 +61,9 @@ const AboutModal: React.FC<AboutModalProps> = ({ closeModal }) => {
           </div>
           <p className="text-gray-700 text-left">
             Imię dla swojego dziecka, rodzice wybrali nie bez powodu, bo życie
-            to największy dar, jaki Bóg daje ludziom tu, na Ziemi. Zapewne z
-            powodu szczęścia, jakie ich i całą rodzinę spotkało, pierworodny syn
-            Ewy i Mariusza nosi to piękne, biblijne imię.
+            to największy dar, jaki Bóg daje ludziom tu, na Ziemi. Zapewne
+            z&nbsp;powodu szczęścia, jakie ich i&nbsp;całą rodzinę spotkało,
+            pierworodny syn Ewy i&nbsp;Mariusza nosi to piękne, biblijne imię.
           </p>
         </div>
       </motion.div>

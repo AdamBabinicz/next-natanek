@@ -60,10 +60,10 @@ const ModalB: React.FC<ModalBProps> = ({ closeModal }) => {
             />
           </div>
           <p className="text-gray-700 text-left">
-            Natanielek jako noworodek spał w ciągu doby długo, zaś jego rodzice
-            z konieczności - krótko. Teraz, gdy jest niespełna dwuletnim
-            niemowlakiem, sytuacja się nieco zmieniła. Śpi do 10 godzin w nocy i
-            1 godzinę w dzień.
+            Natanielek jako noworodek spał w&nbsp;ciągu doby długo, zaś jego
+            rodzice z&nbsp;konieczności - krótko. Teraz, gdy jest niespełna
+            dwuletnim niemowlakiem, sytuacja się nieco zmieniła. Śpi do 10
+            godzin w&nbsp;nocy i&nbsp;1 godzinę w&nbsp;dzień.
           </p>
         </div>
       </motion.div>

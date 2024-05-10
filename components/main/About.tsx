@@ -38,12 +38,12 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
             Natanek jako kierowca
           </h2>
           <p className="text-lg mb-4 text-white">
-            Natanielek przejawia zainteresowanie motoryzacją i to zarówno
-            jednośladową, dwuśladową i trójśladową. Nie omieszka skorzystać z
-            okazji, aby nie zasiąść za kierownicą auta, gdy tata mu na to
+            Natanielek przejawia zainteresowanie motoryzacją i&nbsp;to zarówno
+            jednośladową, dwuśladową i&nbsp;trójśladową. Nie omieszka skorzystać
+            z&nbsp;okazji, aby nie zasiąść za kierownicą auta, gdy tata mu na to
             pozwala. Potrafi nawet użyć klaksonu, chociaż nie ma na tyle siły,
-            aby go uruchomić. Radzi sobie w ten sposób, że trzymając oburącz
-            kierownicę przyciska się do niej całym ciałem i trąbi.
+            aby go uruchomić. Radzi sobie w&nbsp;ten sposób, że trzymając
+            oburącz kierownicę przyciska się do niej całym ciałem i&nbsp;trąbi.
           </p>
           <motion.a
             variants={slideInFromLeft(1)}
