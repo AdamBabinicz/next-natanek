@@ -1,20 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { hasCookie, setCookie } from "cookies-next";
 import Link from "next/link";
 
 export default function CookiesConsent() {
-  const [showConsent, setShowConsent] = useState(true);
+  const [showConsent, setShowConsent] = useState(false);
 
   useEffect(() => {
-    setShowConsent(hasCookie("localConsent"));
+    const consentAccepted = localStorage.getItem("localConsent");
+    if (consentAccepted) {
+      setShowConsent(false);
+    } else {
+      setShowConsent(true);
+    }
   }, []);
 
   const acceptCookie = () => {
-    setShowConsent(true);
-    setCookie("localConsent", "true", {});
+    setShowConsent(false);
+    localStorage.setItem("localConsent", "true");
   };
 
-  if (showConsent) {
+  if (!showConsent) {
     return null;
   }
 
