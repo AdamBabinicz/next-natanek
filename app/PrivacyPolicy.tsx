@@ -20,8 +20,8 @@ const PrivacyPolicy = () => {
         Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
         w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
         osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia
-        dyrektywy 95/46/WE (określane jako "RODO" lub "Ogólne Rozporządzenie o
-        Ochronie Danych").
+        dyrektywy 95/46/WE (określane jako &quot;RODO&quot; lub &quot;Ogólne
+        Rozporządzenie o Ochronie Danych&quot;).
       </p>
       <Link href="/" passHref>
         <a className="block mt-8 text-custom_blue hover:underline">

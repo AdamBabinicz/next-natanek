@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { hasCookie, setCookie } from "cookies-next";
-import Link from "next/link";
 
 export default function CookiesConsent() {
   const [showConsent, setShowConsent] = useState(true);
@@ -28,13 +27,6 @@ export default function CookiesConsent() {
           z&nbsp;witryny bez zmiany ustawień dotyczących cookies oznacza, że
           będą one zamieszczane w Państwa urządzeniu końcowym. Możecie Państwo
           dokonać w&nbsp;każdym czasie zmiany ustawień dotyczących cookies.
-          {/* <Link
-            href="#"
-            onClick={handlePrivacyPolicyClick}
-            onMouseDown={handlePrivacyPolicyMouseDown}
-          >
-            <span>Polityka prywatności</span>
-          </Link> */}
         </span>
         <button
           className="bg-custom_blue sm:mt-0 mt-6 py-2 px-10 rounded text-white"
