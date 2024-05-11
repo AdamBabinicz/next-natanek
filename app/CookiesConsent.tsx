@@ -1,24 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { hasCookie, setCookie } from "cookies-next";
 import Link from "next/link";
 
 export default function CookiesConsent() {
-  const [showConsent, setShowConsent] = useState(false);
+  const [showConsent, setShowConsent] = useState(true);
 
   useEffect(() => {
-    const consentAccepted = localStorage.getItem("localConsent");
-    if (consentAccepted) {
-      setShowConsent(false);
-    } else {
-      setShowConsent(true);
-    }
+    setShowConsent(hasCookie("localConsent"));
   }, []);
 
   const acceptCookie = () => {
-    setShowConsent(false);
-    localStorage.setItem("localConsent", "true");
+    setShowConsent(true);
+    setCookie("localConsent", "true", {});
   };
 
-  if (!showConsent) {
+  if (showConsent) {
     return null;
   }
 
@@ -32,9 +28,13 @@ export default function CookiesConsent() {
           z&nbsp;witryny bez zmiany ustawień dotyczących cookies oznacza, że
           będą one zamieszczane w Państwa urządzeniu końcowym. Możecie Państwo
           dokonać w&nbsp;każdym czasie zmiany ustawień dotyczących cookies.
-          <Link href="/privacy-policy" className="font-bold text-custom">
-            Polityka prywatności
-          </Link>{" "}
+          {/* <Link
+            href="#"
+            onClick={handlePrivacyPolicyClick}
+            onMouseDown={handlePrivacyPolicyMouseDown}
+          >
+            <span>Polityka prywatności</span>
+          </Link> */}
         </span>
         <button
           className="bg-custom_blue sm:mt-0 mt-6 py-2 px-10 rounded text-white"

@@ -5,7 +5,7 @@ import "./globals.css";
 import GoogleAnalytics from "../GoogleAnalitics";
 import Footer from "@/components/main/Footer";
 import Navbar from "@/components/main/Navbar";
-import CookiesConsent from "@/components/main/CookiesConsent";
+import CookiesConsent from "./CookiesConsent";
 import { metadata } from "../metadata";
 
 const inter = Inter({ subsets: ["latin"] });
