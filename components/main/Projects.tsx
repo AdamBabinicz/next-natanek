@@ -2,9 +2,18 @@ import React from "react";
 import ProjectCard from "../sub/ProjectCard";
 
 const Projects = () => {
+  const style = {
+    background: "linear-gradient(to right, #9F7AEA, #00F3FF)",
+    WebkitBackgroundClip: "text",
+    color: "transparent",
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center " id="fototeka">
-      <h2 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+    <div
+      className="flex flex-col items-center justify-center relative"
+      id="fototeka"
+    >
+      <h2 className="text-[40px] font-semibold relative py-20" style={style}>
         Fototeka
       </h2>
       <div className="h-full w-full grid grid-cols-1 md:grid-cols-3 gap-10 px-10">
