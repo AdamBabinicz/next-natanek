@@ -16,6 +16,12 @@ interface HeroContentProps {
 }
 
 const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
+  const style = {
+    background: "linear-gradient(to right, #9F7AEA, #00F3FF)",
+    WebkitBackgroundClip: "text",
+    color: "transparent",
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -38,7 +44,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
           >
             <span>
               Natanek
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              <span className="font-semibold relative py-20" style={style}>
                 {" "}
                 w{" "}
               </span>

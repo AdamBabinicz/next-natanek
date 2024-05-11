@@ -9,10 +9,7 @@ const Projects = () => {
   };
 
   return (
-    <div
-      className="flex flex-col items-center justify-center relative"
-      id="fototeka"
-    >
+    <div className="flex flex-col items-center justify-center" id="fototeka">
       <h2 className="text-[40px] font-semibold relative py-20" style={style}>
         Fototeka
       </h2>

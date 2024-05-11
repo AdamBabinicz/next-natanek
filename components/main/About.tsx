@@ -17,6 +17,12 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
     console.log("Funkcja openModalB wywołana");
   };
 
+  const style = {
+    background: "linear-gradient(to right, #9F7AEA, #00F3FF)",
+    WebkitBackgroundClip: "text",
+    color: "transparent",
+  };
+
   return (
     <div
       className="px-8 items-center sm:flex sm:w-full sm:px-20 mt-40 z-[20]"
@@ -34,7 +40,10 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
         </div>
         {/* Treść */}
         <div>
-          <h2 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+          <h2
+            className="text-[40px] font-semibold relative py-20"
+            style={style}
+          >
             Natanek jako kierowca
           </h2>
           <p className="text-lg mb-4 text-white">
