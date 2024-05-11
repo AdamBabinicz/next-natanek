@@ -19,7 +19,9 @@ const ProjectCard = ({ src, title, description }: Props) => {
         // className="w-full sm:h-[800px] max-h-[650px] object-cover"
       />
       <div className="relative p-4">
-        <h2 className="text-2xl font-semibold text-white">{title}</h2>
+        <h2 className="sm:text-2xl text-xl font-semibold text-white">
+          {title}
+        </h2>
         <p className="mt-2 text-gray-300">{description}</p>
       </div>
     </div>
