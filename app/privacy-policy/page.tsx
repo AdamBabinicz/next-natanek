@@ -3,9 +3,12 @@ import Link from "next/link";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container mx-auto py-8">
+    <div
+      className="container mx-auto sm:py-12 py-16 sm:px-40 px-14 text-white bg-black"
+      style={{ position: "relative", zIndex: "9999" }}
+    >
       <h2 className="text-3xl font-semibold mb-4">Polityka prywatności</h2>
-      <p className="text-lg leading-relaxed">
+      <p className="text-lg leading-relaxed mb-8">
         Niniejsza Polityka prywatności określa zasady przetwarzania i ochrony
         danych osobowych przekazanych przez Użytkowników w związku z
         korzystaniem przez nich z usług dostępnych w serwisie internetowym oraz
@@ -15,7 +18,7 @@ const PrivacyPolicy = () => {
         których stosowane są inne zasady ochrony danych osobowych, przedstawiane
         np. w umowie zawartej z Użytkownikiem.
       </p>
-      <p className="text-lg leading-relaxed mt-4">
+      <p className="text-lg leading-relaxed mb-8">
         Polityka prywatności opiera się na zasadach określonych w Rozporządzeniu
         Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
         w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
@@ -24,9 +27,9 @@ const PrivacyPolicy = () => {
         Rozporządzenie o Ochronie Danych&quot;).
       </p>
       <Link href="/" passHref>
-        <a className="py-2 button-primary text-center text-white cursor-pointer rounded-lg px-4 max-w-[200px]">
-          Powrót
-        </a>
+        <span className="py-2 button-primary text-center text-white cursor-pointer rounded-lg px-4 max-w-[200px]">
+          Powrót do strony głównej
+        </span>
       </Link>
     </div>
   );

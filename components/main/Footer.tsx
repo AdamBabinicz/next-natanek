@@ -2,8 +2,6 @@
 
 import React from "react";
 import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
-// import { Socials } from "@/constants";
-// import { FaYoutube } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 
 const Footer = () => {

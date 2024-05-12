@@ -67,3 +67,7 @@ html {
 a:hover {
   cursor: pointer;
 }
+/* .privacy-policy-container {
+  position: relative;
+  z-index: 9999;
+} */

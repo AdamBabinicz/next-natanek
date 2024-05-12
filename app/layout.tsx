@@ -57,8 +57,8 @@ export default function RootLayout({
           {/* <StarsCanvas /> */}
           <Navbar />
           {children}
-          <CookiesConsent />
           <Footer />
+          <CookiesConsent />
           <GoogleAnalytics measurementId="G-STN2FB1TNF" />;
         </body>
       </html>
