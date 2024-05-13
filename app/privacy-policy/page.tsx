@@ -6,7 +6,7 @@ import Link from "next/link";
 const PrivacyPolicy = () => {
   return (
     <div
-      className="container mx-auto sm:py-12 py-16 sm:px-40 px-14 text-white bg-black"
+      className="container mx-auto sm:py-12 py-16 sm:px-40 px-8 text-white bg-black"
       style={{
         position: "absolute",
         zIndex: "9999",
