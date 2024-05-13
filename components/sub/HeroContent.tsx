@@ -28,7 +28,18 @@ const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
       animate="visible"
       className="px-8 items-center sm:flex sm:w-full sm:px-20 mt-40 z-[20]"
     >
-      <div className="h-full w-full flex flex-col justify-center text-center sm:text-start">
+      <motion.div
+        variants={slideInFromLeft(0.8)}
+        className="h-full w-full flex flex-col justify-center text-center sm:text-start"
+      >
+        <Image
+          src="/assets/2.webp"
+          alt="work icons"
+          height={400}
+          width={400}
+          priority
+          className="object-cover hidden sm:block sm:mb-6"
+        />
         <div className="mx-auto">
           <motion.div
             variants={slideInFromTop}
@@ -55,10 +66,11 @@ const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
             variants={slideInFromLeft(0.8)}
             className="text-lg text-white my-5 max-w-[600px]"
           >
-            Natanek jest bardzo żywiołowym i&nbsp;pogodnym dzieckiem. Interesuje
-            się szczególnie sprzętem gospodarstwa domowego. Zna niektóre odgłosy
-            natury, rozpoznaje i&nbsp;naśladuje zwierzątka. Reaguje na
-            poruszające się samoloty i&nbsp;samochody.
+            Natanek jest bardzo żywiołowym i&nbsp;pogodnym dzieckiem (co widać
+            na powyższym zdjęciu). Interesuje się szczególnie sprzętem
+            gospodarstwa domowego. Zna niektóre odgłosy natury, rozpoznaje
+            i&nbsp;naśladuje zwierzątka. Reaguje na poruszające się samoloty
+            i&nbsp;samochody.
           </motion.p>
           {/* Renderujemy przycisk "Otwórz modal" */}
           <motion.a
@@ -69,7 +81,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
             Otwórz
           </motion.a>
         </div>
-      </div>
+      </motion.div>
       <motion.div
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
