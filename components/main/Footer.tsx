@@ -4,33 +4,35 @@ import { RxInstagramLogo, RxTwitterLogo } from "react-icons/rx";
 import { CgWebsite } from "react-icons/cg";
 
 const Footer = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.5 } },
+  const slideInFromLeft = {
+    hidden: { x: -100, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { delay: 0.5, duration: 0.5 } },
   };
 
-  const itemVariants = {
-    hidden: { x: -100 },
-    visible: { x: 0, transition: { duration: 0.5 } },
+  const slideInFromRight = {
+    hidden: { x: 100, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { delay: 0.5, duration: 0.5 } },
+  };
+
+  const slideInFromTop = {
+    hidden: { y: -100, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { delay: 0.5, duration: 0.5 } },
   };
 
   return (
     <motion.div
       className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] "
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <div className="w-full flex flex-col items-center justify-center m-auto">
-        <motion.div
-          className="w-full h-full flex flex-row items-center justify-around flex-wrap"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
+        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
           <motion.div
             className="min-w-[200px] h-auto flex flex-col items-center justify-start"
-            variants={itemVariants}
+            variants={slideInFromLeft}
+            initial="hidden"
+            animate="visible"
           >
             <div className="font-bold text-[16px]">Projekty</div>
             <p className="flex flex-row items-center my-[10px] cursor-pointer">
@@ -67,7 +69,9 @@ const Footer = () => {
 
           <motion.div
             className="min-w-[200px] h-auto flex flex-col items-center justify-start"
-            variants={itemVariants}
+            variants={slideInFromTop}
+            initial="hidden"
+            animate="visible"
           >
             <div className="font-bold text-[16px]">Media</div>
             <p className="flex flex-row items-center my-[10px] cursor-pointer">
@@ -94,7 +98,9 @@ const Footer = () => {
 
           <motion.div
             className="min-w-[200px] h-auto flex flex-col items-center justify-start"
-            variants={itemVariants}
+            variants={slideInFromRight}
+            initial="hidden"
+            animate="visible"
           >
             <div className="font-bold text-[16px]">Linki</div>
             <p className="flex flex-row items-center my-[10px] cursor-pointer">
@@ -121,7 +127,7 @@ const Footer = () => {
               </a>
             </p>
           </motion.div>
-        </motion.div>
+        </div>
         <div className="mb-[20px] text-[15px] text-center">
           <p>Radom 2024 - {new Date().getFullYear()}.</p>
         </div>
