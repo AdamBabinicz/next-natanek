@@ -1,19 +1,15 @@
-"use client";
-
-// Komponent About
 import React from "react";
 import { motion } from "framer-motion";
-import { slideInFromLeft } from "@/utils/motion";
+import { slideInFromLeft, slideInFromRight } from "@/utils/motion"; // Importuj animacje
 import Image from "next/image";
 
 interface AboutProps {
-  openModalB: () => void; // Zmieniamy nazwę propsa na openModalB
+  openModalB: () => void;
 }
 
 const About: React.FC<AboutProps> = ({ openModalB }) => {
-  // Zmieniamy nazwę propsa na openModalB
   const handleClick = () => {
-    openModalB(); // Wywołujemy funkcję otwierającą ModalB
+    openModalB();
     console.log("Funkcja openModalB wywołana");
   };
 
@@ -29,17 +25,25 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
       id="o-natanku"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        {/* Zdjęcie */}
-        <div>
+        <motion.div
+          className="md:order-1"
+          variants={slideInFromLeft(0.5)}
+          initial="hidden"
+          animate="visible"
+        >
           <Image
             src="/assets/7.webp"
             alt="About Image"
             width={500}
             height={500}
           />
-        </div>
-        {/* Treść */}
-        <div>
+        </motion.div>
+        <motion.div
+          className="md:order-2"
+          variants={slideInFromRight(0.5)}
+          initial="hidden"
+          animate="visible"
+        >
           <h2
             className="text-[40px] font-semibold relative py-20"
             style={style}
@@ -55,13 +59,15 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
             oburącz kierownicę przyciska się do niej całym ciałem i&nbsp;trąbi.
           </p>
           <motion.a
-            variants={slideInFromLeft(1)}
+            variants={slideInFromRight(0.7)}
+            initial="hidden"
+            animate="visible"
             className="py-2 button-primary text-center text-white cursor-pointer rounded-lg px-4 max-w-[200px]"
-            onClick={handleClick} // Po kliknięciu otwieramy ModalB
+            onClick={handleClick}
           >
             Więcej informacji
           </motion.a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
