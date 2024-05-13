@@ -2,10 +2,14 @@
 
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const PrivacyPolicy = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 20 }} // Ustawienie początkowych wartości przezroczystości i położenia
+      animate={{ opacity: 1, y: 0 }} // Ustawienie docelowych wartości przezroczystości i położenia
+      transition={{ duration: 0.5 }} // Ustawienie czasu trwania animacji
       className="container mx-auto sm:py-12 py-16 sm:px-40 px-8 text-white bg-black"
       style={{
         position: "absolute",
@@ -58,7 +62,7 @@ const PrivacyPolicy = () => {
           Powrót do strony głównej
         </span>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

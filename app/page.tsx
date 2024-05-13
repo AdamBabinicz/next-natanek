@@ -8,7 +8,6 @@ import Projects from "@/components/main/Projects";
 // import Skills from "@/components/main/Skills";
 import ModalContainer from "@/components/main/ModalContainer";
 import Film from "@/components/main/Film";
-import Link from "next/link";
 
 export default function Home() {
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
