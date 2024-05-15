@@ -26,24 +26,24 @@ const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="px-8 items-center sm:flex sm:w-full sm:px-20 mt-40 z-[20]"
+      className="px-8 items-center sm:flex sm:w-full sm:px-20 pt-40  z-[20] sm:relative"
     >
+      <Image
+        src="/assets/2.webp"
+        alt="work icons"
+        height={300}
+        width={300}
+        priority
+        className="object-cover hidden sm:block sm:left-60 absolute sm:top-[82px]"
+      />
       <motion.div
         variants={slideInFromLeft(0.8)}
         className="h-full w-full flex flex-col justify-center text-center sm:text-start"
       >
-        <Image
-          src="/assets/2.webp"
-          alt="work icons"
-          height={400}
-          width={400}
-          priority
-          className="object-cover hidden sm:block sm:mb-6"
-        />
         <div className="mx-auto">
           <motion.div
             variants={slideInFromTop}
-            className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+            className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] mt-36"
           >
             <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
             <h1 className="Welcome-text text-[13px]">Fototeka Natanielka</h1>

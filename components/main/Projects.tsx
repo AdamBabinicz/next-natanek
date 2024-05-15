@@ -10,7 +10,7 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col items-center justify-center" id="fototeka">
-      <h2 className="text-[40px] font-semibold relative py-20" style={style}>
+      <h2 className="text-[40px] font-semibold relative py-10" style={style}>
         Fototeka
       </h2>
       <div className="h-full w-full grid grid-cols-1 md:grid-cols-3 gap-10 px-10">

@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
         zIndex: "9999",
         top: 0,
         left: 0,
-        width: "100%",
+        minWidth: "100%",
         minHeight: "100%",
       }}
     >
@@ -40,8 +40,8 @@ const PrivacyPolicy = () => {
         z&nbsp;obowiązującymi przepisami prawa dotyczącymi ochrony danych
         osobowych.
       </p>
-      <h2 className="text-xl font-semibold mb-4">Podstawa prawna</h2>
-      <p className="text-lg leading-relaxed mb-8">
+      <h2 className="sm:text-xl font-semibold mb-4">Podstawa prawna</h2>
+      <p className="sm:text-lg leading-relaxed mb-8">
         Polityka prywatności opiera się na zasadach określonych
         w&nbsp;Rozporządzeniu Parlamentu Europejskiego i&nbsp;Rady (UE) 2016/679
         z&nbsp;dnia 27 kwietnia 2016 r., które znane jest również jako RODO

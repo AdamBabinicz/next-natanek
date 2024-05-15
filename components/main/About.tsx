@@ -21,7 +21,7 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
 
   return (
     <div
-      className="px-8 items-center sm:flex sm:w-full sm:px-20 mt-40 z-[20]"
+      className="px-8 py-10 sm:my-4 items-center sm:flex sm:w-full sm:px-20 z-[20]"
       id="o-natanku"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -45,7 +45,7 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
           animate="visible"
         >
           <h2
-            className="text-[40px] font-semibold relative py-20"
+            className="text-[40px] font-semibold relative sm:py-20"
             style={style}
           >
             Natanek jako kierowca
