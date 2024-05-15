@@ -26,6 +26,11 @@ export default function RootLayout({
               content="width=device-width, initial-scale=1.0"
             />
             <title>{metadata.title.default}</title>
+            <link
+              rel="canonical"
+              href="https://natek.netlify.app"
+              key="canonical"
+            />
             <meta name="description" content={metadata.description} />
             <meta name="keywords" content={metadata.keywords.join(", ")} />
             <meta name="twitter:card" content={metadata.twitter.card} />
