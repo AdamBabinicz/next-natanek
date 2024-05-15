@@ -26,7 +26,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ openAboutModal }) => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="px-8 items-center sm:flex sm:w-full sm:px-20 sm:pt-40  z-[20] sm:relative "
+      className="px-8 items-center sm:flex sm:w-full sm:px-20 sm:pt-40 pt-10 z-[20] sm:relative "
     >
       <Image
         src="/assets/2.webp"
