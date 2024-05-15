@@ -24,7 +24,7 @@ const Hero = () => {
         autoPlay
         muted
         loop
-        className="rotate-0 absolute sm:top-[65px] top-[20px] left-0 z-[1] w-full h-full sm:h-[800px] object-contain"
+        className="rotate-0 absolute sm:top-[65px] top-[10px] left-0 z-[1] w-full h-full sm:h-[800px] object-contain"
         src="/assets/1.mp4"
         style={{ maxWidth: "100%" }}
       >
