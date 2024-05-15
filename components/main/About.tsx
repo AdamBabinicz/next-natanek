@@ -45,7 +45,7 @@ const About: React.FC<AboutProps> = ({ openModalB }) => {
           animate="visible"
         >
           <h2
-            className="text-[40px] font-semibold relative sm:py-20"
+            className="sm:text-[40px] text-[30px] font-semibold relative sm:py-20"
             style={style}
           >
             Natanek jako kierowca
