@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
         w&nbsp;których stosowane są inne zasady ochrony danych osobowych,
         przedstawiane np. w&nbsp;umowie zawartej z&nbsp;Użytkownikiem.
       </p>
-      <p className="text-lg leading-relaxed mb-8">
+      <p className="sm:text-lg text-base leading-relaxed mb-8">
         Polityka prywatności ma zastosowanie do wszystkich danych osobowych
         przetwarzanych przez nasz zespół administracyjny. Wierzymy
         w&nbsp;znaczenie ochrony prywatności każdego użytkownika, dlatego też
