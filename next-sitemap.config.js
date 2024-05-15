@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://example.com",
+  siteUrl: "https://natek.netlify.app",
   generateRobotsTxt: true,
   outDir: "./out",
 };

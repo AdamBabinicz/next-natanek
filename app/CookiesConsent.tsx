@@ -41,7 +41,7 @@ export default function CookiesConsent() {
               Państwo dokonać w&nbsp;każdym czasie zmiany ustawień dotyczących
               cookies.&nbsp;
               <Link
-                className=" inline-block py-1 px-3 rounded-md font-bold text-black bg-white"
+                className=" inline-block py-1 px-3 rounded-md font-bold text-black bg-white z-[5001]"
                 href="/privacy-policy"
               >
                 Polityka prywatności
